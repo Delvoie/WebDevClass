@@ -37,7 +37,7 @@ storytext = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When th
  
    }
  
-   story.textContent = '';
-   story.textContent = storytext.replace(/:insertx:/g, xItem).replace(/:inserty:/g, yItem).replace(/:insertz:/g, zItem).replace(/:insertx:/g, xItem);
+   story.textContent = newstory;
    story.style.visibility = 'visible';
+   replaceall = newstory.replace(/:insertx/g, xItem).replace(/:inserty/g, yItem).replace(/:insertz/g, zItem);
  }
