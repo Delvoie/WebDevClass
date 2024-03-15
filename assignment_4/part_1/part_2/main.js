@@ -11,16 +11,16 @@ const alttexts = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic4.jpg', 'p
 /* Looping through images */
 
 for (let i = 0; i < 6; i++) {
-
     const newImage = document.createElement('img');
-    newImage.setAttribute('src', 'images/pic' + i + '.jpg');
-    newImage.setAttribute('alt', alttexts[i]);
+    newImage.setAttribute('src', 'images/' + imageArry[i]);
+    newImage.setAttribute('alt', alttext[i]);
     thumbBar.appendChild(newImage);
+    // onclick event listner
+    newImage.addeventlistner ('click', (e) => {
+        displayedImage.src = e.target.src;
+    });
 }
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
+
 
 /* Wiring up the Darken/Lighten button */
