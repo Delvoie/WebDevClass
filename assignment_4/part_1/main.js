@@ -30,8 +30,10 @@ storytext = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When th
    }
  
    if(document.getElementById("uk").checked) {
-     const weight = Math.round(300);
-     const temperature =  Math.round(94);
+     const weight = Math.round(300* 0.453592) + 'Kilograms';
+     const temperature =  Math.round((94 - 32) * 5 / 9) + 'Celsius';
+     newstory = newstory.replace('94 fahrenheit', temperature).replace('300 pounds', weight);
+     //replace 300 pounds with kilogram converson of weight 
  
    }
  
