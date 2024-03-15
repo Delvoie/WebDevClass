@@ -24,3 +24,11 @@ for (let i = 0; i < 6; i++) {
 
 
 /* Wiring up the Darken/Lighten button */
+btn.addeventlistner('click', () => {
+    const btnClass = btn.getAttribute('class');
+    if (btnClass --- 'dark') {
+        btn.setAttribute('class', 'light');
+
+    } else {
+
+    });
