@@ -18,26 +18,26 @@ storytext = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When th
  randomize.addEventListener('click', result);
 
  function result() {
-    let newstory = storytext;
-    let xItem = randomValueFromArray(insertX);
-    let yItem = randomValueFromArray(insertY);
-    let zItem = randomValueFromArray(insertZ);
-//use .replace to realce playceholders
- 
-   if(customName.value !== '') {
-     const name = customName.value;
+  let newstory = storytext;
+  let xItem = randomValueFromArray(insertX);
+  let yItem = randomValueFromArray(insertY);
+  let zItem = randomValueFromArray(insertZ);
+
+  if (customName.value !== '') {
+    const name = customName.value;
     newstory = newstory.replace('Bob', name);
-   }
- 
-   if(document.getElementById("uk").checked) {
-     const weight = Math.round(300* 0.453592) + 'Kilograms';
-     const temperature =  Math.round((94 - 32) * 5 / 9) + 'Celsius';
-     newstory = newstory.replace('94 fahrenheit', temperature).replace('300 pounds', weight);
-     //replace 300 pounds with kilogram converson of weight 
- 
-   }
- 
-   story.textContent = newstory;
-   story.style.visibility = 'visible';
+  }
+
+  if (document.getElementById("uk").checked) {
+    const weight = Math.round(300 * 0.453592) + ' Kilograms';
+    const temperature = Math.round((94 - 32) * 5 / 9) + ' Celsius';
+    newstory = newstory.replace('94 fahrenheit', temperature).replace('300 pounds', weight);
+  }
+
+  // Replace placeholders with random values first
+  newstory = newstory.replace(/:insertx/g, xItem).replace(/:inserty/g, yItem).replace(/:insertz/g, zItem);
+
+  story.textContent = newstory;
+  story.style.visibility = 'visible';
+}
    replaceall = newstory.replace(/:insertx/g, xItem).replace(/:inserty/g, yItem).replace(/:insertz/g, zItem);
- }
