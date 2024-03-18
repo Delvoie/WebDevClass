@@ -1,3 +1,9 @@
+// File: main.js
+// Name: Lucas Delvie
+// Date: 17 April  2024
+// A very brief description of the file.
+// -->
+
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
