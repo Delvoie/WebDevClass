@@ -5,26 +5,24 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
+const imageArry = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
 /* Declaring the alternative text for each image file */
-const alttexts = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic4.jpg', 'pic5.jpg'];
-/* Looping through images */
+const alttexts = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
-for (let i = 0; i < 6; i++) {
+/* Looping through images */
+for (let i = 0; i < imageArry.length; i++) {
     const newImage = document.createElement('img');
-    newImage.setAttribute('src', 'images/' + imageArry[i]);
-    newImage.setAttribute('alt', alttext[i]);
+    newImage.setAttribute('src', 'Assets/' + imageArry[i]);
+    newImage.setAttribute('alt', alttexts[i]);
     thumbBar.appendChild(newImage);
-    // onclick event listner
-    newImage.addeventlistner ('click', (e) => {
+    // onclick event listener
+    newImage.addEventListener('click', (e) => {
         displayedImage.src = e.target.src;
     });
 }
 
-
-
 /* Wiring up the Darken/Lighten button */
-
 btn.addEventListener('click', (e) => {
   if (e.target.className == 'dark') {
     btn.setAttribute('class', 'light');
