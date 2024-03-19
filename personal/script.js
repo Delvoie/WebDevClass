@@ -1,10 +1,10 @@
-// Get elements
+// setup Elements
 const webcamVideo = document.getElementById('webcam');
 const toggleWebcamBtn = document.getElementById('toggle-webcam');
 const flipWebcamBtn = document.getElementById('flip-webcam');
 const toggleFullscreenBtn = document.getElementById('toggle-fullscreen');
 
-// Initialize webcam
+// turn on webcam
 navigator.mediaDevices.getUserMedia({ video: { width: 1920, height: 1080 } })
     .then(stream => {
         webcamVideo.srcObject = stream;
@@ -13,7 +13,7 @@ navigator.mediaDevices.getUserMedia({ video: { width: 1920, height: 1080 } })
 
 // Toggle webcam
 let webcamEnabled = true;
-toggleWebcamBtn.addEventListener('click', () => {
+Webcam.addEventListener('click', () => {
     if (webcamEnabled) {
         webcamVideo.srcObject.getTracks().forEach(track => track.stop());
         toggleWebcamBtn.textContent = 'Turn On Webcam';
@@ -29,13 +29,13 @@ toggleWebcamBtn.addEventListener('click', () => {
 
 // Flip webcam horizontally
 let isFlipped = false;
-flipWebcamBtn.addEventListener('click', () => {
+flipWebcam.addEventListener('click', () => {
     webcamVideo.style.transform = isFlipped ? 'none' : 'scaleX(-1)';
     isFlipped = !isFlipped;
 });
 
-// Toggle fullscreen
-toggleFullscreenBtn.addEventListener('click', () => {
+//  fullscreen button
+Fullscreen.addEventListener('click', () => {
     if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen();
     } else {
