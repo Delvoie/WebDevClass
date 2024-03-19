@@ -9,9 +9,6 @@ navigator.mediaDevices.getUserMedia({ video: { width: 1920, height: 1080 } })
     .then(stream => {
         webcamVideo.srcObject = stream;
         toggleWebcamBtn.textContent = 'Turn Off Webcam';
-    })
-    .catch(error => {
-        console.error('Error accessing webcam:', error);
     });
 
 // Toggle webcam
@@ -25,9 +22,6 @@ toggleWebcamBtn.addEventListener('click', () => {
             .then(stream => {
                 webcamVideo.srcObject = stream;
                 toggleWebcamBtn.textContent = 'Turn Off Webcam';
-            })
-            .catch(error => {
-                console.error('Error accessing webcam:', error);
             });
     }
     webcamEnabled = !webcamEnabled;
