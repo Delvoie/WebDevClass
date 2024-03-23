@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   transition: background-color 1s ease;
-  
 }
 
 .start-button {
@@ -16,15 +15,38 @@ body {
   color: #FFFFFF;
   background: #F7C1C1;
   text-shadow: 4px 3px 0px #7A7A7A;
-  color: #FFFFFF;
-  background: #F7C1C1;
   border: none;
   cursor: pointer;
-  border-radius: 10px;}
-
-
+  border-radius: 10px;
+}
 
 .content {
   display: none;
   padding: 20px;
+}
+
+html, body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  height: inherit;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: -1px;
+  position: absolute;
+  margin: 0;
+  top: -4px;
+  right: 5px;
+
+  color: transparent;
+  text-shadow: 0 0 4px white;
 }
