@@ -4,13 +4,13 @@ const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-/* Declaring the array of image filenames */
+//image filenames
 const imageArry = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
-/* Declaring the alternative text for each image file */
+// 
 const alttexts = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
-/* Looping through images */
+//Loop through images
 for (let i = 0; i < imageArry.length; i++) {
     const newImage = document.createElement('img');
     newImage.setAttribute('src', 'Assets/' + imageArry[i]);
@@ -22,7 +22,7 @@ for (let i = 0; i < imageArry.length; i++) {
     });
 }
 
-/* Wiring up the Darken/Lighten button */
+// Darken/Lighten button
 btn.addEventListener('click', (e) => {
   if (e.target.className == 'dark') {
     btn.setAttribute('class', 'light');
