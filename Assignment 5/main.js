@@ -3,6 +3,11 @@
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
+showHideBtn.addEventListener('click', () => {
+  commentWrapper.classList.toggle('hidden');
+});
+
+showHideBtn.textContent = 'Show comments';
 commentWrapper.style.display = 'none';
 
 showHideBtn.onclick = function() {
@@ -54,7 +59,7 @@ const transcriptCon = document.querySelector('.transcript-container')
 transcriptBtn.onclick = () => {
   if(transcriptBtn.textContent === 'Show transcript') {
     transcript.style.display = "block";
-    transcriptBtn.textContent = 'Hide transcript';
+    transcriptBtn.textContent = 'Hide Transcript';
   } else {
     transcript.style.display = "none";
     transcriptBtn.textContent = 'Show transcript'

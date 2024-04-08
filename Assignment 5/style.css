@@ -139,12 +139,27 @@ footer {
 
 table {
   width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  border-collapse: collapse;
   background-color: #dde;
   border-collapse: collapse;
 }
 
+table, th, td {
+  border: 1px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+}
+table th {
+  font-weight: bold;
+}
+
+table td:first-child {
+  font-weight: bold;
+}
+
 th, td {
   padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 td {
@@ -158,6 +173,7 @@ th[scope="col"] {
 tbody tr:nth-child(odd) {
   background-color: #def;
 }
+
 
 /* styling content images and audio */
 
@@ -179,6 +195,10 @@ audio {
 
 .show-hide {
   cursor: pointer;
+}
+
+.show-hide:hover {
+  background-color: #333;
 }
 
 .comments font[size="6"] {
