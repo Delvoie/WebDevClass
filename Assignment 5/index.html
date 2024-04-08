@@ -1,3 +1,10 @@
+	<!--
+	Name: Lucas Delovie
+	File: index.html
+	Date: April 8 2024
+    Webdite Accecibility.
+	-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -97,11 +104,21 @@
         <br><br>
         The following audio clip contains a fact file providing more details about bear mating rituals, along with samples and quotes from experts.
         <br><br>
-        <audio controls>
-          <source src="Assets/bear.mp3" type="audio/mp3">
-          <source src="Assets/bear.ogg" type="audio/ogg">
-          <p>It looks like your browser doesn't support HTML5 audio players.</p>
-        </audio>
+        <section class="audio">
+          <audio controls>
+            <source src="https://cdn.glitch.global/3e194d20-b2e0-4b08-8efa-dccfa5698a7b/bear.mp3?v=1665376557175" type="audio/mp3">
+            <source src="https://cdn.glitch.global/3e194d20-b2e0-4b08-8efa-dccfa5698a7b/bear.ogg?v=1665376562433" type="audio/ogg">
+            <p>It looks like your browser doesn't support HTML5 audio players. Here is a<a href="#">link to the audio (mp3)</a> instead.</p>
+          </audio>
+          <div class="transcript-container">
+            <div class="transcript-control">
+              <button class="transcript-button">Show transcript</button>
+            </div>
+            <section class="transcript">
+              This isn't really an audio fact file about bears, but it is an audio file you can transcribe.
+            </section>
+          </div>
+        </section>
 
         <aside>
 
@@ -112,6 +129,7 @@
           He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.
 
         </aside>
+        <p></p>
         <section class="comments">
           <div class="show-hide">Show comments</div>
 
