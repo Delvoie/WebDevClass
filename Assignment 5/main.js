@@ -45,3 +45,18 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
+
+// audio transcript
+const transcript = document.querySelector('.transcript');
+const transcriptBtn = document.querySelector('.transcript-button');
+const transcriptCon = document.querySelector('.transcript-container')
+
+transcriptBtn.onclick = () => {
+  if(transcriptBtn.textContent === 'Show transcript') {
+    transcript.style.display = "block";
+    transcriptBtn.textContent = 'Hide transcript';
+  } else {
+    transcript.style.display = "none";
+    transcriptBtn.textContent = 'Show transcript'
+  }
+}

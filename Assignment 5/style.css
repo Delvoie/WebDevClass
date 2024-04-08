@@ -248,3 +248,17 @@ audio {
 .comment-container li p:nth-child(2) {
   flex: 5;
 }
+
+/* Transcript */
+audio {
+  margin: 0;
+}
+
+.transcript-control {
+  margin: 10px 0;
+}
+
+.transcript {
+  margin-left: 5px;
+  display: none;
+}
