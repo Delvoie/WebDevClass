@@ -1,42 +1,42 @@
 // functionality for showing/hiding the comments section
 
-const showHideBtn = document.querySelector('.show-hide');
-const commentWrapper = document.querySelector('.comment-wrapper');
+const showHideBtn = document.querySelector(".show-hide");
+const commentWrapper = document.querySelector(".comment-wrapper");
 
-showHideBtn.addEventListener('click', () => {
-  commentWrapper.classList.toggle('hidden');
+showHideBtn.addEventListener("click", () => {
+  commentWrapper.classList.toggle("hidden");
 });
 
-showHideBtn.textContent = 'Show comments';
-commentWrapper.style.display = 'none';
+showHideBtn.textContent = "Show Comments";
+commentWrapper.style.display = "none";
 
-showHideBtn.onclick = function() {
+showHideBtn.onclick = function () {
   let showHideText = showHideBtn.textContent;
-  if(showHideText === 'Show comments') {
-    showHideBtn.textContent = 'Hide comments';
-    commentWrapper.style.display = 'block';
+  if (showHideText === "Show Comments") {
+    showHideBtn.textContent = "Hide Comments";
+    commentWrapper.style.display = "block";
   } else {
-    showHideBtn.textContent = 'Show comments';
-    commentWrapper.style.display = 'none';
+    showHideBtn.textContent = "Show Comments";
+    commentWrapper.style.display = "none";
   }
 };
 
 // functionality for adding a new comment via the comments form
 
-const form = document.querySelector('.comment-form');
-const nameField = document.querySelector('#name');
-const commentField = document.querySelector('#comment');
-const list = document.querySelector('.comment-container');
+const form = document.querySelector(".comment-form");
+const nameField = document.querySelector("#name");
+const commentField = document.querySelector("#comment");
+const list = document.querySelector(".comment-container");
 
-form.onsubmit = function(e) {
+form.onsubmit = function (e) {
   e.preventDefault();
   submitComment();
 };
 
 function submitComment() {
-  const listItem = document.createElement('li');
-  const namePara = document.createElement('p');
-  const commentPara = document.createElement('p');
+  const listItem = document.createElement("li");
+  const namePara = document.createElement("p");
+  const commentPara = document.createElement("p");
   const nameValue = nameField.value;
   const commentValue = commentField.value;
 
@@ -47,21 +47,21 @@ function submitComment() {
   listItem.appendChild(namePara);
   listItem.appendChild(commentPara);
 
-  nameField.value = '';
-  commentField.value = '';
+  nameField.value = "";
+  commentField.value = "";
 }
 
 // audio transcript
-const transcript = document.querySelector('.transcript');
-const transcriptBtn = document.querySelector('.transcript-button');
-const transcriptCon = document.querySelector('.transcript-container')
+const transcript = document.querySelector(".transcript");
+const transcriptBtn = document.querySelector(".transcript-button");
+const transcriptCon = document.querySelector(".transcript-container");
 
 transcriptBtn.onclick = () => {
-  if(transcriptBtn.textContent === 'Show transcript') {
+  if (transcriptBtn.textContent === "Show Transcript") {
     transcript.style.display = "block";
-    transcriptBtn.textContent = 'Hide Transcript';
+    transcriptBtn.textContent = "Hide Transcript";
   } else {
     transcript.style.display = "none";
-    transcriptBtn.textContent = 'Show transcript'
+    transcriptBtn.textContent = "Show Transcript";
   }
-}
+};
