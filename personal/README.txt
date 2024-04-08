@@ -1,1 +1,0 @@
-I dont own a mirror so I decided to code one.
