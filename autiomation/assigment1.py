@@ -13,9 +13,27 @@
 #area = 3.14 * radius**2
 #print (area)
 
+a= 9
+a=10
+print(a)
 
+hourly_wage = input("Please enter your hourly wage: ")
+print("Hourly wage: ")
+print(hourly_wage)
+
+hours_worked= input("Hours worked: ")
+print(hours_worked)
+hours_worked = input("How many hours did you work this week? ")
+
+salary = hourly_wage* hours_worked
+
+print("Your salary is: ", salary)
 
 
 #part 2
-output = "{} is {} years old, and {} works as a {}."
-print(output.format("John",24,"John","web developer"))
+
+
+a= "{name} is {age} years old, and {name} works as a {jpb}."
+print(a.format(name="John", age=32, jpb="Engineer"))
+
+
