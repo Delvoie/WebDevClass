@@ -72,14 +72,13 @@
 #print(movie)
 
 empName = input("Please enter your name: ")
-hourly_wage = float(input("Please enter your hourly wage for {empName}: "))
-print("Hourly wage: ")
-print(hourly_wage)
+hourly_wage = float(input(f"Please enter your hourly wage for {empName} : "))
 
 hours_worked= input("Hours worked: ")
 print(hours_worked)
 hours_worked = float(input(f"How many hours did {empName} work this week? "))
 
-salary = hourly_wage* hours_worked
-
-print("Your salary is: ", salary)
+if hours_worked>40:
+    regularPay= hourly_wage*40
+    overtimePay= (hours_worked-40)* hourly_wage*1.1
+    owedPay=regularPay+overtimePay
