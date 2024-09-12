@@ -65,4 +65,9 @@ newMovie= (title, director, year, budget)
 print(f"{newMovie[0]} {newMovie[1]} {newMovie[2]} {newMovie[3]}")
 
 movie.append(newMovie)
+print(movie[0])
+print(movie[1])
+
+movie.remove(movie[0])
 print(movie)
+
