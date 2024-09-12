@@ -85,3 +85,15 @@ if hours_worked>40:
 else:
     regularPay= hourly_wage*40
     print(regularPay)
+    
+    
+    
+    
+    
+movies = [
+("Eternal Sunshine of the Spotless Mind", "Michel Gondry", 2004),
+("Memento","Christopher Nolan",2000),
+("Requiem for a Dream", "Darren Aronofsky",2000)
+]
+for movie in movies:
+ print(f"{movie[0]} was directed in this ({movie[2]}), by {movie[1]}")
