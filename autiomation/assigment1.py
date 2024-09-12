@@ -62,4 +62,7 @@ year= input("enter year: ")
 budget= input("enter budget: ")
 
 newMovie= (title, director, year, budget)
-print(newMovie)
+print(f"{newMovie[0]} {newMovie[1]} {newMovie[2]} {newMovie[3]}")
+
+movie.append(newMovie)
+print(movie)
