@@ -53,21 +53,33 @@
 #List.pop()
 #print(List)
 
-movie= [("RRR", "martin scorsece", "2024", '200000000')]
-print(f"{movie [0]}")
+#movie= [("RRR", "martin scorsece", "2024", '200000000')]
+#print(f"{movie [0]}")
 
-title= input("enter a title: ")
-director= input("enter director name: ")
-year= input("enter year: ")
-budget= input("enter budget: ")
+#title= input("enter a title: ")
+#director= input("enter director name: ")
+#year= input("enter year: ")
+#budget= input("enter budget: ")
 
-newMovie= (title, director, year, budget)
-print(f"{newMovie[0]} {newMovie[1]} {newMovie[2]} {newMovie[3]}")
+#newMovie= (title, director, year, budget)
+#print(f"{newMovie[0]} {newMovie[1]} {newMovie[2]} {newMovie[3]}")
 
-movie.append(newMovie)
-print(movie[0])
-print(movie[1])
+#movie.append(newMovie)
+#print(movie[0])
+#print(movie[1])
 
-movie.remove(movie[0])
-print(movie)
+#movie.remove(movie[0])
+#print(movie)
 
+empName = input("Please enter your name: ")
+hourly_wage = float(input("Please enter your hourly wage for {empName}: "))
+print("Hourly wage: ")
+print(hourly_wage)
+
+hours_worked= input("Hours worked: ")
+print(hours_worked)
+hours_worked = float(input(f"How many hours did {empName} work this week? "))
+
+salary = hourly_wage* hours_worked
+
+print("Your salary is: ", salary)
