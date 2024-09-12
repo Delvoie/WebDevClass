@@ -46,3 +46,6 @@
 #print("Hello, World!".upper()) # "HELLO, WORLD!"
 #print("Hello, World!".capitalize()) # "Hello, world!"
 #print("hello, world!".title()) # "Hello, World!"
+
+friend_details = ["John",27,"Web Developer"]
+print(friend_details)
