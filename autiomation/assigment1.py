@@ -47,8 +47,8 @@
 #print("Hello, World!".capitalize()) # "Hello, world!"
 #print("hello, world!".title()) # "Hello, World!"
 
-List=["john", "lucas","ludwig", "ethan"]
-List.insert(3,"kelab")
-print(List)
-List.pop()
-print(List)
+#List=["john", "lucas","ludwig", "ethan"]
+#List.insert(3,"kelab")
+#print(List)
+#List.pop()
+#print(List)
