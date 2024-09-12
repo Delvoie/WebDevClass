@@ -60,3 +60,6 @@ title= input("enter a title: ")
 director= input("enter director name: ")
 year= input("enter year: ")
 budget= input("enter budget: ")
+
+newMovie= (title, director, year, budget)
+print(newMovie)
