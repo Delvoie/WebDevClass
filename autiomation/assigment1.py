@@ -52,3 +52,11 @@
 #print(List)
 #List.pop()
 #print(List)
+
+movie= [("RRR", "martin scorsece", "2024", '200000000')]
+print(f"{movie [0]}")
+
+title= input("enter a title: ")
+director= input("enter director name: ")
+year= input("enter year: ")
+budget= input("enter budget: ")
