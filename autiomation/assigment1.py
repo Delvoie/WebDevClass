@@ -38,9 +38,9 @@
 
 
 #name = "lucas"
-a="lucas".strip().title()
-age= 21
-print(f"{a} is {age} years old")
+#a="lucas".strip().title()
+#age= 21
+#print(f"{a} is {age} years old")
 
 #print("Hello, World!".lower()) # "hello, world!"
 #print("Hello, World!".upper()) # "HELLO, WORLD!"
