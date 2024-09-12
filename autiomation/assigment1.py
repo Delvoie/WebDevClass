@@ -51,3 +51,4 @@ List=["john", "lucas","ludwig", "ethan"]
 List.insert(3,"kelab")
 print(List)
 List.pop()
+print(List)
