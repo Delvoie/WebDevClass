@@ -48,4 +48,4 @@
 #print("hello, world!".title()) # "Hello, World!"
 
 List=["john", "lucas","ludwig", "ethan"]
-list.index(3,"kelab")
+list.insert(3,"kelab")
