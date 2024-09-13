@@ -1,4 +1,4 @@
-employes = [
+'''employes = [
     ("Rolf Smith", 35, 8.75),
     ("Anne Pun", 30, 12.50),
     ("Charlie Lee", 50, 15.50),
@@ -16,4 +16,7 @@ print("Average Pay:", avg)
 
 for emp in employes:
     if emp[2] > avg:
-        print(f"{emp[0]} is more than average")
+        print(f"{emp[0]} is more than average")'''
+
+project_authors=["Mike", "Sofia", "Helen"]
+print(f"project authors workers: {project_authors}")
