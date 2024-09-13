@@ -14,14 +14,12 @@ for mov in movies:
 
 avg = totalbudget / len(movies)
 
-print("Total Budget:", totalbudget)
 print("Average Budget:", avg)
 
 for mov in movies:
     if mov[1] > avg:  
         Overbudget = mov[1] - avg
-        print(f"{mov[0]} has a budget greater than the average")
-        print(f"{mov[0]}'s budget is ${Overbudget:.2f} more than the average")
+        print(f"{mov[0]} has a budget greater than the average: ${Overbudget:.2f} more than the average")
 overAvg = 0
 for mov in movies:
     if mov[1] > avg:
