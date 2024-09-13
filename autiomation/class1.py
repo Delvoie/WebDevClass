@@ -23,11 +23,15 @@ project_authors=["Mike", "Sofia", "Helen"]
 project_authors= ", ".join(project_authors)
 print(f"project authors workers: {project_authors}")'''
 
+""""
+original_string = "Python"
+sliced_string = original_string[0:2]
+print(sliced_string)"""
 
-number=[1,2,3,4]
 
-print ("the numbers are", number)
-stg=[]
-for i in number:
-    stg.append(str(number))
-    print(stg)
+
+name = input("please enter your name").split()
+givenName=name[0] 
+lastName= name[1]
+print("given name is : ", givenName)
+print("lastName is: ", lastName)
