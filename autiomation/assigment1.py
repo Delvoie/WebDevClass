@@ -97,3 +97,6 @@ movies = [
 ]
 for movie in movies:
  print(f"{movie[0]} was directed in this ({movie[2]}), by {movie[1]}")
+
+
+ 
