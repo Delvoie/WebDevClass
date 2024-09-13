@@ -18,5 +18,16 @@ for emp in employes:
     if emp[2] > avg:
         print(f"{emp[0]} is more than average")'''
 
+''''
 project_authors=["Mike", "Sofia", "Helen"]
-print(f"project authors workers: {project_authors}")
+project_authors= ", ".join(project_authors)
+print(f"project authors workers: {project_authors}")'''
+
+
+number=[1,2,3,4]
+
+print ("the numbers are", number)
+stg=[]
+for i in number:
+    stg.append(str(number))
+    print(stg)
