@@ -11,5 +11,6 @@ print(people)"""""
 
 add= lambda x,y,z: x+y+z
 
-print(result)
+result = add(1,2,3)
 
+print(result)
