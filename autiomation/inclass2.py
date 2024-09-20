@@ -1,2 +1,2 @@
-exp_file= open("ex1")
+exp_file= open("MyFile", "r")
 print(exp_file.read())
