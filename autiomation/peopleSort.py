@@ -27,12 +27,26 @@ students.sort(key=lambda student: student["grade_average"])
 
 print(students)"""
 
-
+"""
 while True:
-        try:
-                m=int(input("Enter an even number"))
-                print("the number is even")
-                break
+    try:
+        m = int(input("Enter an even number"))
+        if m % 2 == 0:
+            print("the number is even")
+            break
 
-        except ValueError:
-            print("please enter an even number")
+    except ValueError:
+        print("please enter an even number")"""
+
+
+import math
+
+def average(numbers):
+    if len(numbers) == 0:
+        print("Error: Cannot calculate average of an empty list")
+    else:
+        mean = math.fsum(numbers) / len(numbers)
+        print(mean)
+
+numbers = [1, 2, 3, 4, 5]  # example list of numbers
+average(numbers)
