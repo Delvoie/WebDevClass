@@ -1,8 +1,9 @@
+##############
 # Date: Sept 23, 2024
 # Name: "Password Generator"
 # Programmer: Ayhan Ahsan & Lucas Delvoie
 # Description: Generates a password with certain parameters
-
+##############
 # Import packages
 import random
 from string import ascii_letters, digits, punctuation
