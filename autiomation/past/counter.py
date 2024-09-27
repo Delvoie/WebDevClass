@@ -1,5 +1,3 @@
-def get_numbers():
-    while True:
         try:
             numberinput = input("Enter numbers separated by a space (1-300): ")
             numbers = [int(num) for num in numberinput.split()]
