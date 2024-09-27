@@ -4,7 +4,7 @@ def get_numbers():
             number_input = input("Enter numbers separated by a space (1-300): ")
             numbers1 = [int(num) for num in number_input.split()]
             
-            if (1 <= num <= 300 for num in numbers1):
+            if (num < 300 for num in numbers1):
                 return numbers1
             else:
                 print("Please enter numbers between 1 and 300")
