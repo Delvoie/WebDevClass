@@ -14,3 +14,6 @@ def get_numbers():
 numbers = get_numbers()
 max_number = max(numbers)
 print(f"{max_number}")
+
+if __name__ == "__main__":
+    get_numbers()
