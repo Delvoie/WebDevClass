@@ -9,7 +9,7 @@ def get_numbers():
             print("Please enter numbers between 1 and 300")
             return get_numbers()
     except ValueError:
-        print("Error Message (Exception Handling)")
+        print("Error Message (Exception Handling) must all be valid numbers")
         return get_numbers()
 
 numbers = get_numbers()
